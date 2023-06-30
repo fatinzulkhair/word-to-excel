@@ -16,11 +16,13 @@ def word_to_excel(nama_file):
     numbers = []
     for i in doc.paragraphs:
         if re.match(f"^\d+[.)]", i.text):
+            star_of_answer = True
             T_soal_soal.loc[count, "Soal-soal"] = i.text[3:]
             count += 1
             count_n += 1
             numbers.append(i.text[3:])
         elif re.match("^\D+[.)]", i.text):
+            tar_of_answer = False
             if re.match("^[Aa][.)]", i.text):
                 T_soal_soal.loc[(count - 1), "A"] = i.text[3:]
             elif re.match("^[Bb][.)]", i.text):
@@ -37,11 +39,15 @@ def word_to_excel(nama_file):
             # print(i.text)
             pass
         elif re.match("^\D+", i.text):
-            T_soal_soal.loc[count - 1, "Soal-soal"] = (
-                str(numbers[(count_n - 1)]) + "\n" + i.text
-            )
-            numbers.append(T_soal_soal.loc[count - 1, "Soal-soal"] + " ")
-            count_n += 1
+            try:
+                if star_of_answer == True:
+                    T_soal_soal.loc[count - 1, "Soal-soal"] = (
+                        str(numbers[(count_n - 1)]) + "\n" + i.text
+                    )
+                    numbers.append(T_soal_soal.loc[count - 1, "Soal-soal"] + " ")
+                    count_n += 1
+            except:
+                pass
 
     T_soal_soal.index = T_soal_soal.index + 1
     return T_soal_soal
