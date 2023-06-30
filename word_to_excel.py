@@ -15,7 +15,7 @@ st.markdown(
     """
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
-    <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    <img src="https://i.pinimg.com/280x280_RS/1f/38/89/1f3889be1f5de92051e8692216d54df5.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
     FatinZulkhair
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
