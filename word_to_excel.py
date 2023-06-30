@@ -17,7 +17,7 @@ st.markdown(
   <a class="navbar-brand" href="#">
     <img src="https://i.pinimg.com/280x280_RS/1f/38/89/1f3889be1f5de92051e8692216d54df5.jpg" width="45" height="45" class="d-inline-block align-top" alt="">
   </a>
-   <a class="navbar-name" href="https://id.pinterest.com/fzulkhair/" target="_blank" >Fatin Zulkhair</a>
+   <a class="navbar-name navbar-light" href="https://id.pinterest.com/fzulkhair/" target="_blank" >Fatin Zulkhair</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
