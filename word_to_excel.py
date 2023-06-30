@@ -102,8 +102,6 @@ def download_button(df, file_name):
 
 # st.set_page_config(layout="wide")  # Ukuran layar
 
-st.title("Word to Excel")  # Judul
-
 File_word = st.file_uploader("Upload the word file", accept_multiple_files=False)
 
 if File_word is not None:
