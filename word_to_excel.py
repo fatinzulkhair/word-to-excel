@@ -94,7 +94,7 @@ def download_button(df, file_name):
     )
 
 
-st.set_page_config(layout="wide")  # Ukuran layar
+# st.set_page_config(layout="wide")  # Ukuran layar
 
 st.title("Word to Excel")  # Judul
 
