@@ -13,7 +13,7 @@ st.markdown(
 
 st.markdown(
     """
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: ##e9e9e9;">
   <a class="navbar-brand" href="#">
     <img src="https://i.pinimg.com/280x280_RS/1f/38/89/1f3889be1f5de92051e8692216d54df5.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
     FatinZulkhair
